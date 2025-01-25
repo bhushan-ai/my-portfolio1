@@ -1,9 +1,11 @@
 
 import './App.css'
+import './index.css';
 import Header from './Components/Header'
 import Contact from './Components/Contact'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
+import AboutMe from './Components/Aboutme';
 
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
     </section>
     <Skills />
     <Projects />
+    <AboutMe/>
     <Contact />
   </main>
   )

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";  // Import Link from react-router-dom
+// import { Link } from "react-router-dom"; // No longer needed for in-page navigation
 import { Moon, Sun } from "lucide-react";
 
 export default function Header() {
@@ -18,12 +18,12 @@ export default function Header() {
     setMounted(true);
   }, []);
 
-  // Toggle theme between light and dark
-  const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);  // Persist theme in localStorage
-  };
+  // // Toggle theme between light and dark
+  // const toggleTheme = () => {
+  //   const newTheme = theme === "dark" ? "light" : "dark";
+  //   setTheme(newTheme);
+  //   localStorage.setItem("theme", newTheme);  // Persist theme in localStorage
+  // };
 
   useEffect(() => {
     // Apply the theme to the body element for global styling
@@ -36,38 +36,38 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <ul className="flex space-x-6">
             <li>
-              <Link
-                to="#skills"
+              <a
+                href="#skills"
                 className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
               >
                 Skills
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="#projects"
+              <a
+                href="#projects"
                 className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
               >
                 Projects
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="#contact"
+              <a
+                href="#contact"
                 className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
               >
                 Contact
-              </Link>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
+              >
+                About
+              </a>
             </li>
           </ul>
-          <button
-            aria-label="Toggle Dark Mode"
-            type="button"
-            className="p-3 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"
-            onClick={toggleTheme}  // Call toggleTheme to switch between dark and light
-          >
-            {mounted && (theme === "dark" ? <Sun className="text-gray-200" /> : <Moon className="text-gray-800" />)}
-          </button>
         </div>
       </nav>
     </header>

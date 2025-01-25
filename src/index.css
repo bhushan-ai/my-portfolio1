@@ -26,4 +26,17 @@
   html {
     scroll-behavior: smooth;
   }
+  .dark .bg-gray-800 {
+    background-color: #2d3748;
+  }
+  
+  .dark .text-gray-800 {
+    color: #2d3748;
+  }
+  
+  .dark .text-gray-200 {
+    color: #edf2f7;
+  }
+ 
+
   
