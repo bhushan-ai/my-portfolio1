@@ -93,7 +93,7 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          {/* Name Input */}
+          
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 font-bold mb-2">
               Name
