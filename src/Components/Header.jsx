@@ -53,18 +53,18 @@ export default function Header() {
             </li>
             <li>
               <a
-                href="#contact"
-                className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
-              >
-                Contact
-              </a>
-            </li>
-            <li>
-              <a
                 href="#about"
                 className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
               >
                 About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
+              >
+                Contact
               </a>
             </li>
           </ul>
