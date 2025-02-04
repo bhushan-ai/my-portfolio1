@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail } from "lucide-react"; // Added Mail Icon
+import { Github, Linkedin, Mail } from "lucide-react"; 
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -41,7 +41,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      // Here you would typically send the form data to a server
+      
       console.log("Form submitted:", formData);
       // Reset form after submission
       setFormData({ name: "", email: "", message: "" });

@@ -1,32 +1,22 @@
 import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom"; // No longer needed for in-page navigation
 import { Moon, Sun } from "lucide-react";
 
 export default function Header() {
-  // State to store the current theme
   const [theme, setTheme] = useState("light");
   const [mounted, setMounted] = useState(false);
 
-  // Load theme from localStorage when the component mounts
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
       setTheme(savedTheme);
     } else {
-      setTheme("light"); // Default to light theme if no theme is saved
+      setTheme("light"); 
     }
     setMounted(true);
   }, []);
 
-  // // Toggle theme between light and dark
-  // const toggleTheme = () => {
-  //   const newTheme = theme === "dark" ? "light" : "dark";
-  //   setTheme(newTheme);
-  //   localStorage.setItem("theme", newTheme);  // Persist theme in localStorage
-  // };
-
+ 
   useEffect(() => {
-    // Apply the theme to the body element for global styling
     document.body.className = theme;
   }, [theme]);
 

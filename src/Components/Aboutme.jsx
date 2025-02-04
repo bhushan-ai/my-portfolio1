@@ -1,10 +1,8 @@
-import { motion } from "framer-motion"; // Importing framer-motion for animations
-import React from "react"; // Import React to use JSX
+import { motion } from "framer-motion";
+import React from "react"; 
 
 export default function AboutMe() {
-  // Example dynamic content - replace with real data or pass as props
-  const name = "Bhushan";  // Replace with your actual name
-  const yearsOfExperience = 5;  // Replace with your actual years of experience
+  const name = "Bhushan";  
 
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-800 transition-colors duration-300">
