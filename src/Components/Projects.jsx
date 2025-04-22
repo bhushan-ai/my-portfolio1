@@ -10,7 +10,7 @@ const projects = [
     category: "Web",
   },
   {
-    title: "Background Changer",
+    title: "Shoe Collection",
     description:
       "This was my first Project React js, I have created this site for maintain my shoe collection",
     website: "https://bhushan-ai-shoe-collection.netlify.app/",
