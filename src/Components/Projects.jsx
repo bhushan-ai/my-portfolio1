@@ -23,6 +23,12 @@ const projects = [
     website: "https://todoo-js.netlify.app/",
     category: "Web",
   },
+  {
+    title: "Calculator",
+    description: "This is simple calculator I have created using js ",
+    website: "https://calculateop.netlify.app/",
+    category: "Web",
+  },
 ];
 
 export default function Projects() {
