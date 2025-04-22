@@ -43,7 +43,6 @@ export default function Contact() {
     if (validateForm()) {
       
       console.log("Form submitted:", formData);
-      // Reset form after submission
       setFormData({ name: "", email: "", message: "" });
     }
   };
@@ -64,7 +63,6 @@ export default function Contact() {
             <span className="sr-only">GitHub</span>
           </a>
 
-          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/bhushan-ingole/"
             target="_blank"
@@ -75,7 +73,6 @@ export default function Contact() {
             <span className="sr-only">LinkedIn</span>
           </a>
 
-          {/* Email (Mailto Link) */}
           <a
             href="mailto:bhushaningole2004@gmail.com?subject=Contact from Portfolio"
             className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
@@ -85,7 +82,6 @@ export default function Contact() {
           </a>
         </div>
 
-        {/* Form Section */}
         <motion.form
           onSubmit={handleSubmit}
           className="max-w-md mx-auto"
@@ -110,7 +106,6 @@ export default function Contact() {
             {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
           </div>
 
-          {/* Email Input */}
           <div className="mb-4">
             <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 font-bold mb-2">
               Email
@@ -127,7 +122,6 @@ export default function Contact() {
             {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
           </div>
 
-          {/* Message Textarea */}
           <div className="mb-4">
             <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 font-bold mb-2">
               Message
@@ -144,7 +138,6 @@ export default function Contact() {
             {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
           </div>
 
-          {/* Submit Button */}
           <motion.button
             type="submit"
             className="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
