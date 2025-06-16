@@ -22,7 +22,7 @@ export default function AboutMe() {
             Hello, I'm {name}
           </h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">
-            I'm currently in my second year of studying web development, and
+            I'm currently in my third year of studying software development, and
             while I don't have professional experience yet, I’m eager to learn
             and grow in this field. I'm actively seeking an internship where I
             can apply my knowledge of React,Tailwind and modern web technologies
