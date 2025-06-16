@@ -5,16 +5,16 @@ const projects = [
   {
     title: "Weather App",
     description:
-      "This is my First Project. I have created this using HTML, CSS, and JS in this project I used the API of openWeathermap and from there I fetch the data of currect weather",
+      "This is my First Project. I have created this using HTML, CSS, and JS in this project I used the API of openWeathermap and from there I fetch the data of correct weather",
     website: "https://bhushan-ai.github.io/weather-app-js/",
-    category: "Web",
+    category: "Mobile",
   },
   {
     title: "Shoe Collection",
     description:
       "This was my first Project React js, I have created this site for maintain my shoe collection",
     website: "https://bhushan-ai-shoe-collection.netlify.app/",
-    category: "Mobile",
+    category: "Web",
   },
   {
     title: "Todo App",
@@ -29,6 +29,20 @@ const projects = [
     website: "https://calculateop.netlify.app/",
     category: "Web",
   },
+  {
+    title: "Voting App",
+    description:
+      "This is backend app I have created using node express and MongoDb This have functionality like login signUp you can vote here you can create candidate and candidate created by only Admin and there can be one admin and admin can't vote  and I have performed all operations using Postman you can checkout the repo by using following link",
+    website: "https://github.com/bhushan-ai/voting-app-backend",
+    category: "Backend",
+  },
+  {
+    title: "Blogging App",
+    description:
+      "This is Fullstack app I have created using ejs node express and MongoDb This have functionality like login signUp you can create blog here you can add image in your blog also you can comment on any particular blog and I have performed all operations using Postman you can checkout the repo by using following link",
+    website: "https://github.com/bhushan-ai/Blogify-Backend",
+    category: "Backend",
+  },
 ];
 
 export default function Projects() {
@@ -42,14 +56,14 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-20 bg-white dark:bg-gray-800 transition-colors duration-300"
+      className="py-15 bg-gray-800 transition-colors duration-600"
     >
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-gray-200">
+        <h2 className="text-3xl font-bold text-center mb-8  text-gray-200">
           My Projects
         </h2>
         <div className="flex justify-center space-x-4 mb-8">
-          {["All", "Web", "Mobile", "Desktop"].map((category) => (
+          {["All", "Web", "Mobile", "Backend"].map((category) => (
             <button
               key={category}
               onClick={() => setFilter(category)}
@@ -75,16 +89,16 @@ export default function Projects() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
-                className="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+                className="bg-gray-700 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-700"
               >
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">
+                  <h3 className="text-xl font-semibold mb-2 text-gray-200">
                     {project.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
                     {project.description}
                   </p>
-                  <span className="mt-2 inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-300">
+                  <span className="mt-2 inline-block bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-300">
                     {project.category}
                   </span>
                   <div className="mt-4">
@@ -94,7 +108,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="text-blue-500 hover:underline"
                     >
-                      Visit Website
+                      Visit
                     </a>
                   </div>
                 </div>

@@ -1,22 +1,42 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 export default function Skills() {
   const skills = [
-    { name: "React", icon: "⚛️" },
-    { name: "JavaScript", icon: "𝗝𝗦" },
-    { name: "Tailwind CSS", icon: "🎨" },
-    { name: "Git", icon: "🔀" },
+    // Programming Languages
     { name: "C", icon: "👨‍💻" },
     { name: "C++", icon: "💻" },
     { name: "Java", icon: "☕" },
+
+    { name: "React", icon: "⚛️" },
+    { name: "JavaScript", icon: "🟨" },
+    { name: "Tailwind CSS", icon: "🎨" },
+
+    // Backend
+    { name: "Node.js", icon: "🟢" },
+    { name: "Express.js", icon: "🚂" },
+    { name: "REST APIs", icon: "🌐" },
+
+    // Databases
+    { name: "MongoDB", icon: "🍃" },
+    { name: "Mongoose", icon: "🐍" },
     { name: "SQL", icon: "🗄️" },
-    
-  ]
+
+    // Tools & Version Control
+    { name: "Git", icon: "🔀" },
+    { name: "GitHub", icon: "🐱" },
+    { name: "Postman", icon: "📮" },
+    { name: "Netlify", icon: "🌐" },
+  ];
 
   return (
-    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <section
+      id="skills"
+      className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300"
+    >
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-gray-200">My Skills</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-gray-200">
+          My Skills
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {skills.map((skill, index) => (
             <motion.div
@@ -29,11 +49,13 @@ export default function Skills() {
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
               <span className="text-4xl mb-2 block">{skill.icon}</span>
-              <span className="text-xl font-semibold text-gray-800 dark:text-gray-200">{skill.name}</span>
+              <span className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                {skill.name}
+              </span>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
