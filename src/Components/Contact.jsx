@@ -2,9 +2,9 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="container mx-auto px-6 py-5">
+    <div id="contact" className="container mx-auto px-6 py-5">
       <h2 className="text-xl font-bold text-center mb-4 text-gray-800 dark:text-gray-200">
-        Connect Me
+        Connect Me Via
       </h2>
       <div className="flex justify-center space-x-4 mb-5">
         {/* GitHub */}

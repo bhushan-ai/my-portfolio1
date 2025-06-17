@@ -20,7 +20,7 @@ function App() {
           Hi This is Bhushan 
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300">
-        Passionate Frontend Developer | Transforming Ideas Into Seamless and Visually Stunning Web solutions        </p>
+        Passionate Fullstack Developer | Transforming Ideas Into Seamless and Visually Stunning Web solutions        </p>
         <a
           href="#contact"
           className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300"
