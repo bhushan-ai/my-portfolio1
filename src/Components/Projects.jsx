@@ -5,8 +5,8 @@ const projects = [
   {
     title: "Weather App",
     description:
-      "This is my First Project. I have created this using HTML, CSS, and JS in this project I used the API of openWeathermap and from there I fetch the data of correct weather",
-    website: "https://bhushan-ai.github.io/weather-app-js/",
+      "I created this app using react js and here i  use rest Api and Context Api concept i style my app using Tailwind ",
+    website: "https://weather-forcast-reactapp.netlify.app/",
     category: "Mobile",
   },
   {
