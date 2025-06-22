@@ -10,6 +10,13 @@ const projects = [
     category: "Mobile",
   },
   {
+    title: "Meme Generator",
+    description:
+      "Created this app using React and tailwind i have used react router for routing and and use framer-motion for draggable text and for saving the edited meme i have used dom-to-image-more and downloadjs.",
+    website: "https://meme-generator-reactt.netlify.app/",
+    category: "Web",
+  },
+  {
     title: "Shoe Collection",
     description:
       "This was my first Project React js, I have created this site for maintain my shoe collection",
